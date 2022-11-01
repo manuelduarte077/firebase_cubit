@@ -1,16 +1,16 @@
-# firebase_cubit
+## Flutter: Simple CRUD with Firebase & Cubit
 
-A new Flutter project.
+- [FlutterFire UI](https://pub.dev/packages/flutterfire_ui): Login with Google, Facebook & Email
+- Manage the state with [Cubit](https://pub.dev/packages/flutter_bloc)
+- Simple CRUD to firestore Read & Write.
+- Upload and delete images to firebase storage
+- Separate the app in multiple layers (presentation, business logic, data)
+- Cubit tests
 
-## Getting Started
+# Workflow
 
-This project is a starting point for a Flutter application.
+<img src="screenshots/workflow.png" width="70%">
 
-A few resources to get you started if this is your first Flutter project:
+# Architecture
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="screenshots/architecture.png" width="70%">
