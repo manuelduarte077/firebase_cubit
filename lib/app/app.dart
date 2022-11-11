@@ -1,4 +1,5 @@
 import 'package:firebase_cubit/features/splash/splash_screen.dart';
+import 'package:firebase_cubit/navigation/routes.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
         colorScheme: const ColorScheme.light(),
         useMaterial3: true,
       ),
-      home: const SplashScreen(),
+      onGenerateRoute: Routes.routes,
     );
   }
 }
