@@ -15,7 +15,7 @@ class Routes {
 
     switch (settings.name) {
       case splash:
-        return buildRoute(const SplashScreen());
+        return buildRoute(const OnBoardingScreen());
       case intro:
         return buildRoute(const OnBoardingScreen());
       case home:
