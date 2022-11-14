@@ -40,7 +40,7 @@ class _IntroPager extends StatelessWidget {
       indicatorSpace: 10,
       indicatorColor: Colors.indigo,
       indicatorSelectorColor: Colors.indigoAccent,
-      padding: const EdgeInsets.symmetric(vertical: 100),
+      padding: const EdgeInsets.symmetric(vertical: 50),
       child: PageView(
         children: [
           _DescriptionPage(
