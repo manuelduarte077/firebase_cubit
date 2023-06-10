@@ -1,4 +1,4 @@
-package com.getnerdify.firebase_cubit
+package com.example.firebase_cubit
 
 import io.flutter.embedding.android.FlutterActivity
 

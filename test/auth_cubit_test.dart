@@ -23,7 +23,7 @@ void main() {
           .thenAnswer((invocation) => Stream.fromIterable([null]));
       return AuthCubit();
     },
-    act: (cubit) async => await cubit.init(),
+    act: (cubit) async => cubit.init(),
     expect: () => [
       AuthState.signedOut,
     ],

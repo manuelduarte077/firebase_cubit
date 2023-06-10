@@ -7,10 +7,10 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 enum AuthState { initial, signedOut, signedIn }
 
 class AuthCubit extends Cubit<AuthState> {
-  final AuthRepository _authRepository = getIt();
-  StreamSubscription? _authSubscription;
-
   AuthCubit() : super(AuthState.initial);
+  final AuthRepository _authRepository = getIt();
+
+  StreamSubscription? _authSubscription;
 
   /// Esta funcion init es para suscribirme al repository
   Future<void> init() async {

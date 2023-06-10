@@ -19,9 +19,6 @@ class OnBoardingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Welcome'),
-      ),
       body: _IntroPager(),
     );
   }
@@ -35,28 +32,30 @@ class _IntroPager extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return PageIndicatorContainer(
-      length: 4,
-      indicatorSpace: 10,
-      indicatorColor: Colors.indigo,
-      indicatorSelectorColor: Colors.indigoAccent,
-      padding: const EdgeInsets.symmetric(vertical: 50),
-      child: PageView(
-        children: [
-          _DescriptionPage(
-            text: exampleText,
-            imagePath: 'assets/intro_1.png',
-          ),
-          _DescriptionPage(
-            text: exampleText,
-            imagePath: 'assets/intro_2.png',
-          ),
-          _DescriptionPage(
-            text: exampleText,
-            imagePath: 'assets/intro_3.png',
-          ),
-          _LoginPage(),
-        ],
+    return SafeArea(
+      child: PageIndicatorContainer(
+        length: 4,
+        indicatorSpace: 10,
+        indicatorColor: Colors.indigo,
+        indicatorSelectorColor: Colors.indigoAccent,
+        padding: const EdgeInsets.symmetric(vertical: 40),
+        child: PageView(
+          children: [
+            _DescriptionPage(
+              text: exampleText,
+              imagePath: 'assets/intro_1.png',
+            ),
+            _DescriptionPage(
+              text: exampleText,
+              imagePath: 'assets/intro_2.png',
+            ),
+            _DescriptionPage(
+              text: exampleText,
+              imagePath: 'assets/intro_3.png',
+            ),
+            _LoginPage(),
+          ],
+        ),
       ),
     );
   }
@@ -89,7 +88,7 @@ class _DescriptionPage extends StatelessWidget {
                 text,
                 textAlign: TextAlign.center,
                 style:
-                    const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                    const TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
               ),
             ),
           ),
